@@ -1,38 +1,121 @@
-.App {
+
+
+button {
+  background-color: #1A2373;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #F5F5F5;
+  transform: scale(1.05);
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;  
+  align-items: center;    
+  min-height: 100vh;        
+  background: linear-gradient(to right, #1E90FF); 
+  color: white;
+  font-family: Arial, sans-serif;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mission, .vision {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f0f8ff; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mission {
+  border-left: 5px solid #29AB87;
+  padding-left: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.vision {
+  border-left: 5px solid #29AB87; 
+  padding-left: 15px;
+}
+.mission, .vision {
+  background: rgba(255, 255, 255, 0.1); /* soft overlay */
+  border-radius: 8px;
+  padding: 20px;
+}
+.mission, .vision {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* left and right alignment */
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.2); /* subtle transparent bar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Left side (title) */
+.nav-left h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f0f8ff;
+  margin: 0;
+}
+
+/* Right side (login button) */
+.nav-right {
+  position: relative;
+}
+
+.login-btn {
+  background-color: #1E90FF; /* blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #29AB87; /* jungle green */
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: #333;
+  border-radius: 6px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.option-btn {
+  background-color: transparent;
   color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.option-btn:hover {
+  background-color: #1E90FF;
 }
