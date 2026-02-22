@@ -36,19 +36,7 @@ function HomePage() {
             <p className="vision">
                 To be the leading pharmaceutical distributor recognized for innovation, trust, and excellence in delivering life saving medicines across healthcare institutiins. 
             </p>
-            <div style={{ marginTop: "20px"}}>
-                <Link to="/pharma-login">
-                <button style={{ margin: "10px", padding: "10px 20px"}}>
-                     Pharmaceutical
-                </button>
-                
-                </Link>
-                <Link to="/hospital-login">
-                <button style={{ margin: "10px", paddin: "10px 20px"}}>
-                     Hospital
-                </button>
-                </Link>
-            </div>
+            
         </div>
 
     );
