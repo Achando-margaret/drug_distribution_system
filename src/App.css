@@ -74,7 +74,6 @@ button:hover {
   margin: 0;
 }
 
-/* Right side (login button) */
 .nav-right {
   position: relative;
 }
@@ -118,4 +117,122 @@ button:hover {
 
 .option-btn:hover {
   background-color: #1E90FF;
+}
+/* Pharma Login Page */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#1E90FF); 
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.login-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Login form */
+.login-page form {
+  background: rgba(255, 255, 255, 0.1); /* subtle transparent box */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+/* Input fields */
+.login-page input {
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Button */
+.login-page button {
+  background-color: #1E90FF; /* blue */
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-page button:hover {
+  background-color: #29AB87; /* jungle green hover */
+  transform: scale(1.05);
+}
+/* Pharma Dashboard */
+.pharma-page {
+  min-height: 100vh;
+  background: linear-gradient(#1E90FF); /* jungle green → blue */
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Dashboard title */
+.pharma-page h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Vertical layout that fits in one screen */
+.pharma-content {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* 3 equal rows */
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  flex-grow: 1; /* fill remaining space */
+}
+
+/* Dashboard cards */
+.pharma-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pharma-card:hover {
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.pharma-card h2 {
+  color: #f0f8ff;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.pharma-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #e0e0e0;
 }
