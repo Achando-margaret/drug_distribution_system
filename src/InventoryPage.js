@@ -46,12 +46,12 @@ function InventoryPage() {
           </thead>
           <tbody>
             {inventory.map((item) => (
-              <tr key={item.id}>
-                <td>{item.name}</td>
-                <td>{item.quantity}</td>
-                <td>{item.expiry_date}</td>
-                <td>{item.batch_number}</td>
-                <td>{item.supplier}</td>
+              <tr key={item.ID}>
+                <td>{item.Name}</td>
+                <td>{item.Quantity}</td>
+                <td>{item.Expiry_Date}</td>
+                <td>{item.Batch_Number}</td>
+                <td>{item.Supplier}</td>
               </tr>
             ))}
           </tbody>
