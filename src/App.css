@@ -408,3 +408,68 @@ button:hover {
 .distribution-table tr:hover {
   background-color: #e6f7ff;
 }
+.hospital-dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.hospital-form, .drug-request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.hospital-form label, .drug-request-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #333;
+}
+
+.hospital-form input, .drug-request-form input, .drug-request-form select {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.hospital-form button, .drug-request-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hospital-form button:hover, .drug-request-form button:hover {
+  background-color: #45a049;
+}
+
+.hospital-requests-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.hospital-requests-table th, .hospital-requests-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.hospital-requests-table th {
+  background-color: #333;
+  color: white;
+}
+
+.hospital-requests-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.hospital-requests-table tr:hover {
+  background-color: #e6f7ff;
+}

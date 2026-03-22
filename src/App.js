@@ -8,6 +8,7 @@ import DistributionPage from "./DistributionPage";
 import ReportsPage from "./ReportsPage";
 import HospitalLogin from "./HospitalLogin";
 import "./App.css";
+import HospitalDashboard from "./HospitalDashboard";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/inventory" element={<InventoryPage />} />
           <Route path="/distribution" element={<DistributionPage />} />
           <Route path="/reports" element={<ReportsPage/>}/>
+          <Route path="/hospital-dashboard" element={<HospitalDashboard/>}/>
         </Routes>
       </BrowserRouter>
   
